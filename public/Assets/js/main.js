@@ -2,11 +2,11 @@
 /***************Post**************************/
 const posts = document.querySelector(".posts");
 const post_data = [
-  ['https://i.ibb.co/3S1hjKR/account1.jpg','zineb',45,'https://i.ibb.co/Jqh3rHv/img1.jpg',150,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
-  ['https://i.ibb.co/8x4Hqdw/account2.jpg','ikram',15,'https://i.ibb.co/2ZxBFVp/img2.jpg',150,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
-  ['https://i.ibb.co/CWbynB2/account3-1.jpg','amina',5,'https://i.ibb.co/5vQt677/img3.jpg',350,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
-  ['https://i.ibb.co/19R19st/account4.jpg','amal',15,'https://i.ibb.co/FVVxR6x/img.jpg',150,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
-  ['https://i.ibb.co/x68ZFKP/account6.jpg','amine',15,'https://i.ibb.co/r7xBR56/img5.jpg',150,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
+  ['https://images.pexels.com/photos/4861305/pexels-photo-4861305.jpeg','zineb',45,'https://images.pexels.com/photos/4861305/pexels-photo-4861305.jpeg',150,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
+  ['https://images.pexels.com/photos/7041768/pexels-photo-7041768.jpeg','ikram',15,'https://images.pexels.com/photos/7041768/pexels-photo-7041768.jpeg',150,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
+  ['https://images.pexels.com/photos/6632974/pexels-photo-6632974.jpeg','amina',5,'https://images.pexels.com/photos/6632974/pexels-photo-6632974.jpeg',350,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
+  ['https://images.pexels.com/photos/4861367/pexels-photo-4861367.jpeg','amal',15,'https://images.pexels.com/photos/4861367/pexels-photo-4861367.jpeg',150,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
+  ['https://images.pexels.com/photos/37408268/pexels-photo-37408268.jpeg','amine',15,'https://images.pexels.com/photos/37408268/pexels-photo-37408268.jpeg',150,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
 ]
 
 if(posts)
@@ -22,7 +22,7 @@ if(posts)
           <span>${post_data[i][2]}m</span>
       </div>
       <div class="more">
-          <img src="./images/show_more.png" alt="show more">
+          <img src="/Assets/images/show_more.png" alt="show more">
       </div>
     </div>
     <div class="image">
@@ -32,25 +32,25 @@ if(posts)
       <div class="icons">
           <div class="icon_left d-flex">
               <div class="like">
-                  <img class="not_loved" src="./images/love.png" >
-                  <img class="loved" src="./images/heart.png" >
+                  <img class="not_loved" src="/Assets/images/love.png" >
+                  <img class="loved" src="/Assets/images/heart.png" >
               </div>
               <div class="chat">
                   <button type="button" class="btn p-0" data-bs-toggle="modal"
                       data-bs-target="#message_modal">
-                      <img src="./images/bubble-chat.png" >
+                      <img src="/Assets/images/bubble-chat.png" >
                   </button>
               </div>
               <div class="send">
                   <button type="button" class="btn p-0" data-bs-toggle="modal"
                       data-bs-target="#send_message_modal">
-                      <img src="./images/send.png" >
+                      <img src="/Assets/images/send.png" >
                   </button>
               </div>
           </div>
           <div class="save not_saved">
-              <img class="hide saved" src="./images/save_black.png" >
-              <img class="not_saved" src="./images/save-instagram.png" >
+              <img class="hide saved" src="/Assets/images/save_black.png" >
+              <img class="not_saved" src="/Assets/images/save-instagram.png" >
           </div>
       </div>
       <div class="liked">
@@ -99,11 +99,11 @@ for (var i = 0; i < explore_date.length;i++) {
       <div class="bg"
         <div class="info">
           <div class="likes">
-              <img src="./images/heart_white.png" >
+              <img src="/Assets/images/heart_white.png" >
               <span>${explore_date[i][1]}</span>
           </div>
           <div class="comments">
-              <img src="./images/message.png" >
+              <img src="/Assets/images/message.png" >
               <span>${explore_date[i++][2]}</span>
           </div>
         </div>
@@ -114,11 +114,11 @@ for (var i = 0; i < explore_date.length;i++) {
       <div class="bg"
         <div class="info">
           <div class="likes">
-              <img src="./images/heart_white.png" >
+              <img src="/Assets/images/heart_white.png" >
               <span>${explore_date[i][1]}</span>
           </div>
           <div class="comments">
-              <img src="./images/message.png" >
+              <img src="/Assets/images/message.png" >
               <span>${explore_date[i++][2]}</span>
           </div>
         </div>
@@ -129,11 +129,11 @@ for (var i = 0; i < explore_date.length;i++) {
       <div class="bg"
         <div class="info">
           <div class="likes">
-              <img src="./images/heart_white.png" >
+              <img src="/Assets/images/heart_white.png" >
               <span>${explore_date[i][1]}</span>
           </div>
           <div class="comments">
-              <img src="./images/message.png" >
+              <img src="/Assets/images/message.png" >
               <span>${explore_date[i++][2]}</span>
           </div>
         </div>
@@ -144,11 +144,11 @@ for (var i = 0; i < explore_date.length;i++) {
       <div class="bg"
         <div class="info">
           <div class="likes">
-              <img src="./images/heart_white.png" >
+              <img src="/Assets/images/heart_white.png" >
               <span>${explore_date[i][1]}</span>
           </div>
           <div class="comments">
-              <img src="./images/message.png" >
+              <img src="/Assets/images/message.png" >
               <span>${explore_date[i++][2]}</span>
           </div>
         </div>
@@ -166,11 +166,11 @@ for (var i = 0; i < explore_date.length;i++) {
   <div class="bg"
     <div class="info">
       <div class="likes">
-          <img src="./images/heart_white.png" >
+          <img src="/Assets/images/heart_white.png" >
           <span>${explore_date[i][1]}</span>
       </div>
       <div class="comments">
-          <img src="./images/message.png" >
+          <img src="/Assets/images/message.png" >
           <span>${explore_date[i][2]}</span>
       </div>
     </div>
@@ -182,8 +182,8 @@ for (var i = 0; i < explore_date.length;i++) {
 
 /*****************Reels********************/
 const reels_data = [
-  ['./video/video1.mp4',
-  './images/profile_img.jpg',
+  ['/Assets/video/video1.mp4',
+  '/Assets/images/profile_img.jpg',
   'zineb',
   'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Officiis...',
   'nameOfMusic',
@@ -191,7 +191,7 @@ const reels_data = [
   '55.9K',
   '555',
   ],
-  ['./video/video2.mp4',
+  ['/Assets/video/video2.mp4',
   'https://i.ibb.co/3S1hjKR/account1.jpg',
   'ikram',
   'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Officiis...',
@@ -200,7 +200,7 @@ const reels_data = [
   '35.9K',
   '75',
   ],
-  ['./video/video3.mp4',
+  ['/Assets/video/video3.mp4',
   'https://i.ibb.co/8x4Hqdw/account2.jpg',
   'oumnia',
   'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Officiis...',
@@ -209,7 +209,7 @@ const reels_data = [
   '10.5K',
   '155',
   ],
-  ['./video/video4.mp4',
+  ['/Assets/video/video4.mp4',
   'https://i.ibb.co/CWbynB2/account3-1.jpg',
   'Safae',
   'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Officiis...',
@@ -235,11 +235,11 @@ for(let i=0;i<reels_data.length;i++){
     </video>
     <div class="content">
         <div class="sound">
-            <img class="volume-up" src="./images/volume-up.png" >
-            <img class="volume-mute" src="./images/volume-mute.png" >
+            <img class="volume-up" src="/Assets/images/volume-up.png" >
+            <img class="volume-mute" src="/Assets/images/volume-mute.png" >
         </div>
         <div class="play">
-            <img src="./images/play-button-arrowhead.png" >
+            <img src="/Assets/images/play-button-arrowhead.png" >
         </div>
         <div class="info">
             <div class="profile">
@@ -255,11 +255,11 @@ for(let i=0;i<reels_data.length;i++){
                 </p>
                 <div class="more">
                     <div class="music">
-                        <img src="./images/music.png" >
+                        <img src="/Assets/images/music.png" >
                         <span>${reels_data[i][4]}</span>
                     </div>
                     <div class="position">
-                        <img src="./images/map.png" >
+                        <img src="/Assets/images/map.png" >
                         <span>${reels_data[i][5]}</span>
                     </div>
                 </div>
@@ -269,27 +269,27 @@ for(let i=0;i<reels_data.length;i++){
 </div>
 <div class="likes">
     <div class="like">
-        <img class="not_loved" src="./images/love.png" >
-        <img class="loved" src="./images/heart.png" >
+        <img class="not_loved" src="/Assets/images/love.png" >
+        <img class="loved" src="/Assets/images/heart.png" >
         <p> ${reels_data[i][6]}</p>
     </div>
     <div class="messsage">
         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#message_modal">
-            <img src="./images/bubble-chat.png" >
+            <img src="/Assets/images/bubble-chat.png" >
             <p class="m-0">${reels_data[i][7]}</p>
         </button>
     </div>
     <div class="send">
         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#send_message_modal">
-            <img src="./images/send.png" >
+            <img src="/Assets/images/send.png" >
         </button>
     </div>
     <div class="save not_saved">
-        <img class="hide saved" src="./images/save_black.png" >
-        <img class="not_saved" src="./images/save-instagram.png" >
+        <img class="hide saved" src="/Assets/images/save_black.png" >
+        <img class="not_saved" src="/Assets/images/save-instagram.png" >
     </div>
     <div class="more">
-        <img src="./images/show_more.png" >
+        <img src="/Assets/images/show_more.png" >
     </div>
     <div class="profile">
         <img src="${reels_data[i][1]}" >
@@ -301,11 +301,11 @@ for(let i=0;i<reels_data.length;i++){
       </video>
       <div class="content">
           <div class="sound">
-              <img class="volume-up" src="./images/volume-up.png" >
-              <img class="volume-mute" src="./images/volume-mute.png" >
+              <img class="volume-up" src="/Assets/images/volume-up.png" >
+              <img class="volume-mute" src="/Assets/images/volume-mute.png" >
           </div>
           <div class="play">
-              <img src="./images/play-button-arrowhead.png" >
+              <img src="/Assets/images/play-button-arrowhead.png" >
           </div>
           <div class="info">
               <div class="profile">
@@ -321,11 +321,11 @@ for(let i=0;i<reels_data.length;i++){
                   </p>
                   <div class="more">
                       <div class="music">
-                          <img src="./images/music.png" >
+                          <img src="/Assets/images/music.png" >
                           <span>${reels_data[i][4]}</span>
                       </div>
                       <div class="position">
-                          <img src="./images/map.png" >
+                          <img src="/Assets/images/map.png" >
                           <span>${reels_data[i][5]}</span>
                       </div>
                   </div>
@@ -335,27 +335,27 @@ for(let i=0;i<reels_data.length;i++){
   </div>
   <div class="likes">
       <div class="like">
-          <img class="not_loved" src="./images/love.png" >
-          <img class="loved" src="./images/heart.png" >
+          <img class="not_loved" src="/Assets/images/love.png" >
+          <img class="loved" src="/Assets/images/heart.png" >
           <p> ${reels_data[i][6]}</p>
       </div>
       <div class="messsage">
           <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#message_modal">
-              <img src="./images/bubble-chat.png" >
+              <img src="/Assets/images/bubble-chat.png" >
               <p class="m-0">${reels_data[i][7]}</p>
           </button>
       </div>
       <div class="send">
           <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#send_message_modal">
-              <img src="./images/send.png" >
+              <img src="/Assets/images/send.png" >
           </button>
       </div>
       <div class="save not_saved">
-          <img class="hide saved" src="./images/save_black.png" >
-          <img class="not_saved" src="./images/save-instagram.png" >
+          <img class="hide saved" src="/Assets/images/save_black.png" >
+          <img class="not_saved" src="/Assets/images/save-instagram.png" >
       </div>
       <div class="more">
-          <img src="./images/show_more.png" >
+          <img src="/Assets/images/show_more.png" >
       </div>
       <div class="profile">
           <img src="${reels_data[i][1]}" >
@@ -594,5 +594,6 @@ function completed(){
       share_btn_post.innerHTML = ""
   })
 }
+
 
 
