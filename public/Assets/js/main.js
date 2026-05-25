@@ -71,21 +71,21 @@ if(posts)
 
 /***************explore**********/
 const explore_date = [
-  ['https://i.ibb.co/Jqh3rHv/img1.jpg',1500,400],
-  ['https://i.ibb.co/2ZxBFVp/img2.jpg',400,200],
-  ['https://i.ibb.co/5vQt677/img3.jpg',700,20],
-  ['https://i.ibb.co/FVVxR6x/img.jpg',150,80],
-  ['https://i.ibb.co/CWbynB2/account3-1.jpg',10,5],
-  ['https://i.ibb.co/z41bG1y/img6.jpg',100,57],
-  ['https://i.ibb.co/vkXPdxN/account7.jpg',100,57],
-  ['https://i.ibb.co/7R0Vzp3/account8.jpg',100,57],
-  ['https://i.ibb.co/gvrfhjL/account9.jpg',100,57],
-  ['https://i.ibb.co/j8L7FPY/account10.jpg',100,57],
-  ['https://i.ibb.co/JcXRPht/account11.jpg',100,57],
-  ['https://i.ibb.co/6WvdZS9/account12.jpg',100,57],
-  ['https://i.ibb.co/pJ8thst/account13.jpg',100,57],
-  ['https://i.ibb.co/4M3W996/account14.jpg',100,57],
-  ['https://i.ibb.co/3S1hjKR/account1.jpg',100,57],
+  ['https://images.pexels.com/photos/7034083/pexels-photo-7034083.jpeg',1500,400],
+  ['https://images.pexels.com/photos/6001625/pexels-photo-6001625.jpeg',400,200],
+  ['https://images.pexels.com/photos/19975716/pexels-photo-19975716.jpeg',700,20],
+  ['https://images.pexels.com/photos/33522868/pexels-photo-33522868.jpeg',150,80],
+  ['https://images.pexels.com/photos/7034087/pexels-photo-7034087.jpeg',10,5],
+  ['https://images.pexels.com/photos/15389627/pexels-photo-15389627.jpeg',100,57],
+  ['https://images.pexels.com/photos/37494338/pexels-photo-37494338.jpeg',100,57],
+  ['https://images.pexels.com/photos/6001658/pexels-photo-6001658.jpeg',100,57],
+  ['https://images.pexels.com/photos/7034022/pexels-photo-7034022.jpeg',100,57],
+  ['https://images.pexels.com/photos/7034091/pexels-photo-7034091.jpeg',100,57],
+  ['https://images.pexels.com/photos/3808125/pexels-photo-3808125.jpeg',100,57],
+  ['https://images.pexels.com/photos/11560896/pexels-photo-11560896.jpeg',100,57],
+  ['https://images.pexels.com/photos/2925303/pexels-photo-2925303.jpeg',100,57],
+  ['https://images.pexels.com/photos/8197552/pexels-photo-8197552.jpeg',100,57],
+  ['https://images.pexels.com/photos/34571918/pexels-photo-34571918.jpeg',100,57],
 ]
 const explores = document.querySelector('.explore_container');
 

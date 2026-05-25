@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram</title> 
-    <link rel="stylesheet" href="/Assets/sass/vender/bootstrap.css">
-    <link rel="stylesheet" href="/Assets/sass/vender/bootstrap.min.css">
-    
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="/Assets/sass/main.css">
-</head>
-<body>
+﻿@extends('index')
+
+@section('title', 'bookgram')
+
+@section('content')
     <div class="container">
         <div class="login">
             <div class="images d-none d-lg-block">
@@ -21,20 +12,20 @@
                 <div class="sliders">
                     <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="/Assets/images/screenshot1.png" class="d-block" alt="screenshot1">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Assets/images/screenshot2.png" class="d-block" alt="screenshot2">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Assets/images/screenshot3.png" class="d-block" alt="screenshot3">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Assets/images/screenshot4.png" class="d-block" alt="screenshot4">
-                          </div>
+                            <div class="carousel-item active">
+                                <img src="/Assets/images/screenshot1.png" class="d-block" alt="screenshot1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/Assets/images/screenshot2.png" class="d-block" alt="screenshot2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/Assets/images/screenshot3.png" class="d-block" alt="screenshot3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/Assets/images/screenshot4.png" class="d-block" alt="screenshot4">
+                            </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
             <div class="content">
@@ -49,9 +40,8 @@
                         <div>
                             <input type="password" name="password" id="password" placeholder="password">
                         </div>
-                        
                     </form>
-                    <a href="home">
+                    <a href="/home">
                         <button class="log_btn">
                             Log in
                         </button>
@@ -77,8 +67,8 @@
                 </div>
                 <div class="sing-up border_insc">
                     <p>
-                        Don't have an account? 
-                        <a href="sign_up">Sign up</a>
+                        Don\'t have an account?
+                        <a href="/signup">Sign up</a>
                     </p>
                 </div>
                 <div class="download">
@@ -91,12 +81,4 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
-       
-   
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
-</body>
-</html>
-
-
+@endsection

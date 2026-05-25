@@ -1,4 +1,15 @@
 /**colors****/
+:root {
+  --bs-body-bg: #121212;
+  --bs-body-color: #e4e6eb;
+  --bs-dropdown-bg: #1e1e1e;
+  --bs-dropdown-color: #e4e6eb;
+  --bs-dropdown-border-color: #2d2d2d;
+  --bs-dropdown-link-color: #e4e6eb;
+  --bs-dropdown-link-hover-bg: #2d2d2d;
+  --bs-dropdown-link-hover-color: #f5f5f5;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
