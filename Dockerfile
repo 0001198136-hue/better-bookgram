@@ -1,20 +1,38 @@
-FROM richarvey/nginx-php-fpm:latest
+FROM php:8.3-fpm
 
+# Instala dependências do sistema
+RUN apt-get update && apt-get install -y \
+    nginx \
+    curl \
+    zip \
+    unzip \
+    git \
+    libpng-dev \
+    libonig-dev \
+    libxml2-dev \
+    libpq-dev \
+    && docker-php-ext-install pdo pdo_pgsql pdo_mysql mbstring exif pcntl bcmath gd
+
+# Instala o Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+# Copia o projeto
+WORKDIR /var/www/html
 COPY . .
 
-# Image config
-ENV SKIP_COMPOSER 1
-ENV WEBROOT /var/www/html/public
-ENV PHP_ERRORS_STDERR 1
-ENV RUN_SCRIPTS 1
-ENV REAL_IP_HEADER 1
+# Instala dependências PHP
+RUN composer install --no-dev --optimize-autoloader
 
-# Laravel config
-ENV APP_ENV production
-ENV APP_DEBUG false
-ENV LOG_CHANNEL stderr
+# Permissões
+RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
-# Allow composer to run as root
-ENV COMPOSER_ALLOW_SUPERUSER 1
+# Copia config do Nginx
+COPY nginx.conf /etc/nginx/sites-available/default
+
+EXPOSE 80
+
+# Script de inicialização
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
 
 CMD ["/start.sh"]
